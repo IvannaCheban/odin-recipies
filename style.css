@@ -1,51 +1,93 @@
 body {
-    font-family: sans-serif;
-    height: 100%;
-    background-color: rgb(223, 235, 245);
-}
-body{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    flex: 0;
-    
-}
-.main{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  
-}
-.footer{
- justify-content: space-between;
- height: 60px;
- width: 100%;
-}
-.recipie{
-    width: 300px;
-    text-align: center;
-}
-.menu .recipie{
-    text-align: left;
-    color: rgb(26, 29, 28);
 
-}
-ul{
+ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.options>li {
+    padding: 5px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+
+}
+
+.recipie {
     display: flex;
 }
 
-li{
-    padding: 5px;
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+
 }
-a{
-    text-decoration: none;
-    color: black;   
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo {
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.buttons button {
+    margin: 25px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline;
+    box-shadow: 5px 5px rgb(87, 85, 83);
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.418);
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.bottom {
+    margin: 10px;
+    padding: 5px;
 }
